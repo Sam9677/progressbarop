@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>64% Progress</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .status-label {
+      display: inline-block;
+      background-color: limegreen;
+      color: black;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .progress-box {
+      width: 300px;
+      height: 24px;
+      border: 1px solid #333;
+      margin: 20px auto;
+      background-color: white;
+      position: relative;
+    }
+
+    .progress-fill {
+      background-color: #00a651;
+      height: 100%;
+      width: 64%; /* ✅ ACTUAL PROGRESS WIDTH */
+    }
+
+    .percentage {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div>Status: <span class="status-label">On track</span></div>
+  <div style="margin-top: 8px; font-size: 16px;">Overall Progress</div>
+  <div class="percentage">64%</div>
+
+  <div class="progress-box">
+    <div class="progress-fill"></div>
+  </div>
+
+</body>
+</html>
